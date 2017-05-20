@@ -3,7 +3,7 @@
 //  cprogramming
 //
 //  Created by Gilbert Appiah on 5/19/17.
-//  Copyright © 2017 gilbertapiah. All rights reserved.
+//  Copyright © 2017 gilbertappiah.com All rights reserved.
 //
 
 /*
@@ -12,8 +12,6 @@
  *
  *
  */
-
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,15 +24,15 @@ void *append(int size, int *arr);
 int sum( int size, int *arr){
     int summ =0;
     size -=1;
+    
     while (size >=0 ) {
-       
         summ =  summ+ arr[size];
         size--;
-        
     }
     
     return summ;
 }
+
 void *append(int size,int *arr){
     int count=0, r;
     srand((unsigned)time(NULL));
@@ -43,9 +41,10 @@ void *append(int size,int *arr){
         r = rand() %100;
         arr[count] = r;
     }
-  
+    
     return 0;
 }
+
 void userInput(){
     int *arr = malloc(sizeof(int)), input = 0, size=0, count=0;
     while (1) {
@@ -71,16 +70,13 @@ void userInput(){
             case 2:
                 printf("\nSum:%d \n\n", sum(size, arr));
                 break;
-                
             default:
                 break;
         }
     }
-
 }
 
 int main(int argc, const char * argv[]) {
     userInput();
     return 0;
-
 }
