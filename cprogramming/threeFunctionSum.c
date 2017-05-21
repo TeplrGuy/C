@@ -10,7 +10,6 @@
  *
  * Write three functions that compute the sum of the numbers in a given an array of elements
  *
- *
  */
 
 #include <stdio.h>
